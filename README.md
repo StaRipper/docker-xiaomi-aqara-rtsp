@@ -23,7 +23,7 @@ docker run --name xiaomi-aqara-rtsp \
   -e IP=<IP_ADDRESS> \
   -e TOKEN=<DEVICE_TOKEN> \
   -p 8554:8554 \
-  -d humpedli/docker-xiaomi-aqara-rtsp
+  -d staripper/xiaomi-aqara-rtsp
 ```
 
 ---
@@ -34,7 +34,7 @@ version: '3'
 services:
   xiaomi-aqara-rtsp:
     container_name: "xiaomi-aqara-rtsp"
-    image: "humpedli/docker-xiaomi-aqara-rtsp"
+    image: "staripper/xiaomi-aqara-rtsp:arl-ubuntu64"
     ports:
       - "8554:8554"
     environment:
